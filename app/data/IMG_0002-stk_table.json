@@ -1,0 +1,93 @@
+{
+	"picture" : {
+		"frameArray" : [
+			{
+				"frame" : {
+					"metadataRef" : "sha1-e35addb28df33eaf78648fae16b6c43a31332f50",
+					"privateMetadataRef" : "sha1-bcd19a32dd62ec9642b8be5dbfe8fd8fcbe6831d",
+					"imageRef" : "sha1-090e75b3a9754398868e088ad45b286429e0cc43"
+				},
+				"parameters" : {
+					"vendorContent" : {
+						"com.lytro.tags" : {
+							"darkFrame" : false,
+							"modulationFrame" : false
+						}
+					}
+				}
+			}
+		],
+		"viewArray" : [
+			{
+				"type" : "com.lytro.stars",
+				"vendorContent" : {
+					"starred" : false
+				}
+			}
+		],
+		"accelerationArray" : [
+			{
+				"type" : "com.lytro.acceleration.refocusStack",
+				"generator" : "Lytro Lightfield Engine 1.000000",
+				"vendorContent" : {
+					"viewParameters" : {},
+					"displayParameters" : {
+						"displayDimensions" : {
+							"mode" : "fixedToValue",
+							"value" : {
+								"width" : 1080,
+								"height" : 1080
+							}
+						}
+					},
+					"defaultLambda" : 0,
+					"depthLut" : {
+						"width" : 20,
+						"height" : 20,
+						"representation" : "raw",
+						"imageRef" : "sha1-96a726c4bad52f9dc78258dbbc6c1b50183411dd"
+					},
+					"imageArray" : [
+						{
+							"representation" : "jpeg",
+							"width" : 1080,
+							"height" : 1080,
+							"lambda" : -4.879695892333984375,
+							"imageRef" : "sha1-ba5d273c0b742476f0878e3a1cd240b5a8e14976"
+						},
+						{
+							"representation" : "jpeg",
+							"width" : 1080,
+							"height" : 1080,
+							"lambda" : -4.0003905296325683594,
+							"imageRef" : "sha1-3783ec24592ac268baef58acea23fa7dbe5091a6"
+						},
+						{
+							"representation" : "jpeg",
+							"width" : 1080,
+							"height" : 1080,
+							"lambda" : -3.0050251483917236328,
+							"imageRef" : "sha1-1815ec9b9c780e696fe8872f63784e87d6738a4d"
+						},
+						{
+							"representation" : "jpeg",
+							"width" : 1080,
+							"height" : 1080,
+							"lambda" : -1.9471633434295654297,
+							"imageRef" : "sha1-0e4043d25b034bfb5d5a7cb641617a3b48fe5d1e"
+						}
+					]
+				}
+			}
+		],
+		"derivationArray" : [
+			"sha1-ea2d7fd9463042bd5ae6b5cb91db948769c71eff"
+		]
+	},
+	"thumbnailArray" : [],
+	"version" : {
+		"major" : 1,
+		"minor" : 0,
+		"provisionalDate" : "2012-10-23"
+	}
+}

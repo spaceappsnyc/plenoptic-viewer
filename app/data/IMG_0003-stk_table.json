@@ -1,0 +1,93 @@
+{
+	"picture" : {
+		"frameArray" : [
+			{
+				"frame" : {
+					"metadataRef" : "sha1-e73f2870556869b746c73c42b15081e21db54c5c",
+					"privateMetadataRef" : "sha1-bcd19a32dd62ec9642b8be5dbfe8fd8fcbe6831d",
+					"imageRef" : "sha1-dcde06b148a1a72acb438a5a3f3368fe654af6af"
+				},
+				"parameters" : {
+					"vendorContent" : {
+						"com.lytro.tags" : {
+							"darkFrame" : false,
+							"modulationFrame" : false
+						}
+					}
+				}
+			}
+		],
+		"viewArray" : [
+			{
+				"type" : "com.lytro.stars",
+				"vendorContent" : {
+					"starred" : false
+				}
+			}
+		],
+		"accelerationArray" : [
+			{
+				"type" : "com.lytro.acceleration.refocusStack",
+				"generator" : "Lytro Lightfield Engine 1.000000",
+				"vendorContent" : {
+					"viewParameters" : {},
+					"displayParameters" : {
+						"displayDimensions" : {
+							"mode" : "fixedToValue",
+							"value" : {
+								"width" : 1080,
+								"height" : 1080
+							}
+						}
+					},
+					"defaultLambda" : 0,
+					"depthLut" : {
+						"width" : 20,
+						"height" : 20,
+						"representation" : "raw",
+						"imageRef" : "sha1-ffda42a3117a3e02dd7cf2f571544ade0b89e084"
+					},
+					"imageArray" : [
+						{
+							"representation" : "jpeg",
+							"width" : 1080,
+							"height" : 1080,
+							"lambda" : -1.1999999284744262695,
+							"imageRef" : "sha1-f1961517956cd97b8cb6ae619d08221a183eb052"
+						},
+						{
+							"representation" : "jpeg",
+							"width" : 1080,
+							"height" : 1080,
+							"lambda" : 1.2360689640045166016,
+							"imageRef" : "sha1-e96f75edeb184ab7bedde0be91f8704c1a457f86"
+						},
+						{
+							"representation" : "jpeg",
+							"width" : 1080,
+							"height" : 1080,
+							"lambda" : 2.0221228599548339844,
+							"imageRef" : "sha1-23d043349a80505648eba7049552a03d3a04352e"
+						},
+						{
+							"representation" : "jpeg",
+							"width" : 1080,
+							"height" : 1080,
+							"lambda" : 2.9942586421966552734,
+							"imageRef" : "sha1-1d3f8706c51836a8d74d3069e667ed81190425fb"
+						}
+					]
+				}
+			}
+		],
+		"derivationArray" : [
+			"sha1-71cf19dde5df761fb5b8d00e993398ca47574aaf"
+		]
+	},
+	"thumbnailArray" : [],
+	"version" : {
+		"major" : 1,
+		"minor" : 0,
+		"provisionalDate" : "2012-10-23"
+	}
+}

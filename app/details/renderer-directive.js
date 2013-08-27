@@ -17,22 +17,30 @@ Application.Directives.directive('renderer', ['configuration', function (configu
                     previousMouseEvent = previousMouseEvent || event;
                     deltaX = event.x - previousMouseEvent.x;
                     deltaY = event.y - previousMouseEvent.y;
-                    shape.rotation.y -= deltaX * 0.001;
-                    shape.rotation.x -= deltaY * 0.001;
+                    shape.rotation.y += deltaX * 0.001;
+                    shape.rotation.x += deltaY * 0.001;
                     previousMouseEvent = event;
-                    console.log(deltaX);
+                }
+            });
+
+            element.bind('mousewheel', function (event) {
+                event.preventDefault();
+                if (event.wheelDeltaY) {
+                    camera.position.z += event.wheelDeltaY > 0 ? 1 : -1;
                 }
             });
 
             element.bind('mousedown', function (event) {
                 leftButtonDown = event.which === 1;
                 previousMouseEvent = undefined;
-                console.log(event);
             });
 
             element.bind('mouseup', function (event) {
                 leftButtonDown = false;
-                console.log(event);
+            });
+
+            element.bind('dblclick', function (event) {
+                shape.material.wireframe = !shape.material.wireframe;
             });
 
             render = function () {
@@ -44,9 +52,7 @@ Application.Directives.directive('renderer', ['configuration', function (configu
                 geometry = new THREE.PlaneGeometry(dimensions, dimensions, dimensions - 1, dimensions - 1);
 
                 material = new THREE.MeshBasicMaterial({
-                    //color: 0xFF0000,
-                    map : THREE.ImageUtils.loadTexture(configuration.DATA_URL + 'IMG_0011-stk_00.jpg')
-                    //wireframe : true
+                    map : THREE.ImageUtils.loadTexture(configuration.DATA_URL + scope.id + '-stk_00.jpg')
                 });
 
                 //draw verticies
@@ -68,11 +74,7 @@ Application.Directives.directive('renderer', ['configuration', function (configu
 
                 element[0].appendChild(renderer.domElement);
                 (function render () {
-                    //shape.rotation.x += .001;
-                    //shape.rotation.y += .01;
-
                     renderer.render(scene, camera);
-
                     requestAnimationFrame(render);
                 })();
             }
