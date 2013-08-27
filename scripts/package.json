@@ -1,0 +1,11 @@
+{
+  "name": "angular-sprout-grunt",
+  "description": "A package for building angular-sprout with grunt",
+  "author": "James Wanga <james@thedigitalself.com>",
+  "dependencies": {
+    "grunt-usemin": ">= 0.1.2",
+    "grunt-contrib-copy": ">= 0.3.2",
+    "grunt-contrib-clean": ">= 0.4.0a",
+    "grunt-contrib-mincss": ">= 0.3.2"
+  }
+}
